@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('webfonts/shackiehandpaintedpersonalregular-x3k9d.otf');
+}
+
+h1 {
+    font-family: 'MyFont';
+    font-weight: lighter;
+    font-size: 70px;
+    color: rgb(255, 217, 0);
+    text-shadow: 1px 1px 1px black;
+}
+
+body {
+    background-color: cadetblue;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    background-color: rgb(222, 15, 53);
+    border-radius: 25px;
+    width: 1600px;
+    height: 800px;
+    box-shadow: 2px 2px 4px black;
+    text-align: center;
+}
