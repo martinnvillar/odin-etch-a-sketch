@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Etch-A-Sketch</title>
@@ -17,24 +18,27 @@
                 <div class="grid"></div>
             </div>
             <div class="btnContainer">
-                <button class="btn">Color</button>
-                <button class="btn">Rainbow</button>
-                <button class="btn">Clear</button>
+                <input id="colorPicker" type="color" value="#000000" class="colorPicker">
+                <button class="btn" id="blackBtn">Black</button>
+                <button class="btn" id="rainbowBtn">Rainbow</button>
+                <button class="btn" id="clearBtn">Clear</button>
             </div>
-            <div class="quantity">
-                <label for="quantInput">Type A Value For Grid Size:</label>
-                <input type="number" id="quantInput" name="quantity" />
+            <div class="gridSlider">
+                <label for="slider" class="sliderValue">16</label>
+                <div class="sliderDiv">
+                    <input type="range" min="2" max="64" value="16" id="slider">
+                </div>
             </div>
-            <!-- <div class="decoration">
-                <button class="decBtn"></button>
-                <button class="decBtn"></button>
-            </div> -->
+            <div class="decoration">
+                <span class="decSpan"></span>
+                <span class="decSpan"></span>
+            </div>
         </div>
     </div> 
 
     <footer>
-        <a href="https://github.com/martinnvillar">martinnvillar</a> 
+        <a href="https://github.com/martinnvillar" target="_blank">martinnvillar</a> 
         © The Odin Project 2023
     </footer>
 </body>
-</html>>
+</html>
