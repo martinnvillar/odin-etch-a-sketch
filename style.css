@@ -50,8 +50,9 @@ a:hover {
 .board {
     background-color: rgb(222, 15, 53);
     padding: 20px;
+    border: 2px solid black;
     border-radius: 25px;
-    width: 1400px;
+    width: 1200px;
     height: 900px;
     box-shadow: 2px 2px 4px black;
     text-align: center;
