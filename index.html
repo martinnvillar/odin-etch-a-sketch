@@ -19,14 +19,21 @@
             </div>
             <div class="btnContainer">
                 <input id="colorPicker" type="color" value="#000000" class="colorPicker">
-                <button class="btn" id="blackBtn">Black</button>
+                <button class="btn" id="colorBtn">Color</button>
                 <button class="btn" id="rainbowBtn">Rainbow</button>
                 <button class="btn" id="clearBtn">Clear</button>
             </div>
             <div class="gridSlider">
                 <label for="slider" class="sliderValue">16</label>
                 <div class="sliderDiv">
-                    <input type="range" min="2" max="64" value="16" id="slider">
+                    <input 
+                        type="range"
+                        min="2"
+                        max="64"
+                        value="16"
+                        id="slider"
+                        onchange="changeSize(this.value)"
+                    />
                 </div>
             </div>
             <div class="decoration">
