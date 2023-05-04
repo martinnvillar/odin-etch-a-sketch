@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'MyFont';
     src: url('webfonts/shackiehandpaintedpersonalregular-x3k9d.otf');
@@ -67,6 +73,7 @@ a:hover {
     padding: 3px;
     background-color: rgb(222, 15, 53);
     border: 3px solid rgb(142, 2, 2);
+    transition: color 200ms linear, background 200ms linear;
 }
 
 #colorPicker:hover {
@@ -87,6 +94,7 @@ a:hover {
     height: 60px;
     margin-top: 40px;
     cursor: pointer;
+    transition: color 200ms linear, background 200ms linear;
 }
 
 .btn:hover {
@@ -127,12 +135,8 @@ a:hover {
 }
 
 .grid {
-    /* box-shadow: 2px 2px 4px black; */
-    display: inline-grid;
+    display: grid;
     border: 1px solid black;
-    grid-template-columns: repeat(16, 2fr);
-    grid-template-rows: repeat(16, 2fr);
-    border-radius: 5px;
     height: 375px;
     width: 375px;
     background-color: whitesmoke;
@@ -163,8 +167,8 @@ a:hover {
 #slider {
     -webkit-appearance: none;
     background-color: rgb(255, 217, 0);
-    border-radius: 10px;
-    height: 2px;
+    border-radius: 1px;
+    height: 4px;
     width: 170px;
     cursor: pointer;
 }
@@ -177,4 +181,13 @@ a:hover {
     height: 20px;
     max-width: 20px;
     background-color: rgb(255, 217, 0);
+    transition: transform 0.3s ease-in-out;
+}
+
+#slider::-webkit-slider-thumb:active {
+    transform: scale(0.8);
+}
+
+#slider::-webkit-slider-thumb:hover {
+    background-color: rgb(255, 224, 49);
 }
